@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box with Background Video</title>
+  <style>
+    .video-box {
+      width: 400px;
+      height: 250px;
+      position: relative;
+      overflow: hidden;
+      border: 2px solid #fff;
+    }
+
+    .video-box video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.3); /* Optional: Adds a dark overlay */
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-box">
+    <video autoplay loop muted>
+      <source src="Ai Generated, Fireplace, Camping. Free Stock Video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="content">Video Background Box</div>
+  </div>
+
+</body>
+</html>

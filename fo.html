@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+.s4-4 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.f1q {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px; /* Ensures content fits well */
+  word-wrap: break-word;
+}
+
+.ic-img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.f-icon {
+  max-width: 50px;
+  height: auto;
+}
+
+.f-h2, .f-p {
+  margin: 5px 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .s4-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 10px;
+  }
+
+  .f1q {
+    min-width: 250px; /* Prevents items from shrinking */
+    white-space: normal;
+  }
+}
+
+</style>
+<body>
+    <div class="s4-4">
+        <div class="f1q">
+          <div class="ic-img">
+            <img src="image 14.png" alt="" class="f-icon" />
+          </div>
+          <h2 class="f-h2 w-clq">
+            Shopify Store Setup & Customization
+          </h2>
+          <p class="f-p">
+            Build a store that reflects your brand and converts visitors
+            into loyal customers.
+          </p>
+        </div>
+        <div class="f1q">
+          <div class="ic-img">
+            <img src="image 15.png" alt="" class="f-icon" />
+          </div>
+          <h2 class="f-h2 w-cla">Custom Theme Design</h2>
+          <p class="f-p">
+            Stand out with a bespoke Shopify theme that delivers a
+            flawless customer experience.
+          </p>
+        </div>
+        <div class="f1q">
+          <div class="ic-img">
+            <img src="image 16.png" alt="" class="f-icon" />
+          </div>
+          <h2 class="f-h2 w-cla">Shopify Plus Support</h2>
+          <p class="f-p">
+            Tailored solutions for Shopify Plus merchants looking for
+            advanced features and scalability.
+          </p>
+        </div>
+        <div class="f1q">
+          <div class="ic-img">
+            <img src="image 17.png" alt="" class="f-icon" />
+          </div>
+          <h2 class="f-h2 w-clq">
+            App Integrations & Custom Development
+          </h2>
+          <p class="f-p">
+            Get the most out of your store with integrations like
+            QuickBooks, CRM systems, and custom app development.
+          </p>
+        </div>
+      </div>
+</body>
+</html>
